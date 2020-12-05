@@ -4,7 +4,7 @@ public class MultiThreads {
 
     public synchronized void  printA() {
             try {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < 5; i++) {
                     while (!letter.equals("A")) {
                         wait();
                     }
@@ -19,7 +19,7 @@ public class MultiThreads {
 
     public synchronized void  printB() {
         try {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 5; i++) {
                 while (!letter.equals("B")) {
                     wait();
                 }
@@ -34,7 +34,7 @@ public class MultiThreads {
 
     public synchronized void  printC() {
         try {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 5; i++) {
                 while (!letter.equals("C")) {
                     wait();
                 }
